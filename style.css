@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #b82325;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --background-color: #ecf0f1;
+  --text-color: white;
+}
+
+body {
+  padding: 0rem 1rem 2rem 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Fraunces, system-ui, -apple-system;
+}
+
+p {
+  font-family: Inter, system-ui, -apple-system;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.font-azeret-mono {
+  font-weight: 500;
+  font-family: Azeret Mono, system-ui, -apple-system;
+  letter-spacing: 2px;
+}
+
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 12px 21px;
+  border-radius: 11px;
+  font-family: Inter;
+  font-weight: 600;
+}
+.hero-section-padding {
+  padding: 2.5rem;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>icorku</title>
+  </head>
+  <body>
+    <header class="bg-white border-b py-4 sticky top-0">
+      <div class="flex justify-between items-center">
+        <img src="/public/icorku-logo.svg" alt="Logo" class="h-8" />
+        <button id="menu-toggle" class="lg:hidden focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+        <ul id="menu" class="hidden lg:flex items-center gap-4">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button class="btn-primary">Sign in</button></li>
+        </ul>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden">
+        <ul class="flex flex-col items-start gap-2 p-4 bg-white border-t">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button class="btn-primary">Sign in</button></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="hero-section-padding flex flex-col lg:flex-row justify-between items-center gap-6"
+      >
+        <div class="w-full lg:w-1/2 flex flex-col gap-6">
+          <h1 class="font-bold text-7xl">Drink. Share. Reminisce.</h1>
+          <p>
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next consultancy website within few minutes.
+          </p>
+          <button class="w-fit btn-primary">Explore More</button>
+          <div class="flex flex-col gap-2">
+            <p class="font-azeret-mono uppercase text-xs">Download our app</p>
+            <div class="flex items-center gap-2">
+              <a target="_blank" href="">
+                <img src="/public/app-store.svg" alt="" />
+              </a>
+              <a target="_blank" href="">
+                <img src="/public/play-store.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <img src="/public/hero-image.svg" alt="" />
+      </section>
+      <!-- Why icorku rocks -->
+       <section class="-mt-36 bg-primary w-full h-[80vh] rounded-[70px]">
+
+       </section>
+    </main>
+    <footer></footer>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
