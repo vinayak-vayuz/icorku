@@ -45,12 +45,14 @@
         </ul>
       </div>
     </header>
-    <main>
+    <main class="overflow-hidden">
       <!-- Hero Section -->
       <section
-        class="hero-section-padding flex flex-col lg:flex-row justify-between items-center gap-6"
+        class="hero-section-padding min-h-screen flex flex-col lg:flex-row justify-between items-center gap-6"
       >
-        <div class="w-full lg:w-1/2 flex flex-col gap-6">
+        <div
+          class="w-full lg:w-1/2 flex flex-col gap-6 slide-in-left-animation"
+        >
           <h1 class="font-bold text-7xl">Drink. Share. Reminisce.</h1>
           <p>
             With lots of unique blocks, you can easily build a page without
@@ -69,7 +71,11 @@
             </div>
           </div>
         </div>
-        <img src="/public/hero-image.svg" alt="" />
+        <img
+          class="slide-in-right-animation"
+          src="/public/hero-image.svg"
+          alt=""
+        />
       </section>
       <!-- Why icorku rocks -->
       <section class="section-padding lg:-mt-36">
@@ -257,9 +263,9 @@
       </section>
     </main>
 
-    <footer class="pt-20 pb-10 px-4 sm:px-8 md:px-14 lg:px-20">
+    <footer class="pt-20 pb-10 px-4 sm:px-8 md:px-10 lg:px-16">
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-16"
       >
         <div class="flex flex-col gap-6">
           <a href="/"
@@ -273,7 +279,7 @@
         </div>
 
         <div>
-          <h4 class="text-lg text-white font-bold mb-12">Product</h4>
+          <h4 class="text-lg text-white font-bold mb-8">Product</h4>
           <ul class="flex flex-col gap-4">
             <li
               class="text-[#868c98] hover:pl-1 hover:text-[#8f1bdc] transition-all ease-in-out duration-300"
@@ -299,7 +305,7 @@
         </div>
 
         <div>
-          <h4 class="text-lg text-white font-bold mb-12">Company</h4>
+          <h4 class="text-lg text-white font-bold mb-8">Company</h4>
           <ul class="flex flex-col gap-4">
             <li
               class="text-[#868c98] hover:pl-1 hover:text-[#8f1bdc] transition-all ease-in-out duration-300"
@@ -325,7 +331,7 @@
         </div>
 
         <div>
-          <h4 class="text-lg text-white font-bold mb-12">Contact us</h4>
+          <h4 class="text-lg text-white font-bold mb-8">Contact us</h4>
           <ul class="pb-4 flex flex-wrap gap-4">
             <li class="text-[#868c98]">
               <a

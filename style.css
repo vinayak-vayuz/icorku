@@ -77,9 +77,6 @@ a:hover {
   font-family: Inter;
   font-weight: 600;
 }
-.hero-section-padding {
-  padding: 2.5rem;
-}
 
 footer {
   width: 100%;
@@ -87,12 +84,19 @@ footer {
   background-color: var(--secondary-color);
 }
 
+.hero-section-padding {
+  padding: 1rem;
+}
+
 .section-padding {
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
 }
 
 /* For small screens (sm: min-width 640px) */
 @media (min-width: 640px) {
+  .hero-section-padding {
+    padding: 2.5rem;
+  }
   .section-padding {
     padding: 0rem 1.5rem;
   }
@@ -100,6 +104,9 @@ footer {
 
 /* For medium screens (md: min-width 768px) */
 @media (min-width: 768px) {
+  .hero-section-padding {
+    padding: 2.5rem;
+  }
   .section-padding {
     padding: 0rem 2rem;
   }
@@ -107,6 +114,9 @@ footer {
 
 /* For large screens (lg: min-width 1024px) */
 @media (min-width: 1024px) {
+  .hero-section-padding {
+    padding: 2rem 6rem;
+  }
   .section-padding {
     padding: 0rem 3rem;
   }
@@ -114,6 +124,9 @@ footer {
 
 /* For extra-large screens (xl: min-width 1280px) */
 @media (min-width: 1280px) {
+  .hero-section-padding {
+    padding: 2rem 6rem;
+  }
   .section-padding {
     padding: 0rem 4rem;
   }
@@ -121,7 +134,34 @@ footer {
 
 /* For 2XL screens (2xl: min-width 1536px) */
 @media (min-width: 1536px) {
+  .hero-section-padding {
+    padding: 2rem 6rem;
+  }
   .section-padding {
     padding: 0rem 5rem;
+  }
+}
+
+.slide-in-left-animation {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.slide-in-right-animation {
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
