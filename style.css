@@ -11,9 +11,13 @@
   --text-secondary-color: #b4b4b4;
 }
 
+
 body {
-  max-width: 85rem;
+
+  max-width: 95rem;
   padding: 0;
+
+
 }
 
 h1,
@@ -66,6 +70,7 @@ a:hover {
   font-family: Inter;
   font-weight: 600;
 }
+
 .btn-secondary {
   display: flex;
   justify-content: center;
@@ -97,6 +102,7 @@ footer {
   .hero-section-padding {
     padding: 2.5rem;
   }
+
   .section-padding {
     padding: 0rem 1.5rem;
   }
@@ -107,6 +113,7 @@ footer {
   .hero-section-padding {
     padding: 2.5rem;
   }
+
   .section-padding {
     padding: 0rem 2rem;
   }
@@ -117,6 +124,7 @@ footer {
   .hero-section-padding {
     padding: 2rem 6rem;
   }
+
   .section-padding {
     padding: 0rem 3rem;
   }
@@ -127,6 +135,7 @@ footer {
   .hero-section-padding {
     padding: 2rem 6rem;
   }
+
   .section-padding {
     padding: 0rem 4rem;
   }
@@ -137,6 +146,7 @@ footer {
   .hero-section-padding {
     padding: 2rem 6rem;
   }
+
   .section-padding {
     padding: 0rem 5rem;
   }
@@ -145,6 +155,7 @@ footer {
 .slide-in-left-animation {
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
+
 .slide-in-right-animation {
   animation: 1s ease-out 0s 1 slideInFromRight;
 }
@@ -153,15 +164,75 @@ footer {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
 }
+
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(0);
   }
 }
+
+
+/* Menu Css start here  */
+
+#mobile-menu {
+  position: fixed;
+  left: -100%;
+  /* Hidden by default */
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  background-color: white;
+  border-right: 1px solid #ccc;
+  transition: left 0.3s ease;
+  /* Animation for opening */
+  z-index: 1000;
+}
+
+#mobile-menu.open {
+  left: 0;
+  /* Slide in */
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; 
+  z-index: 900; 
+}  */
+
+ul li a {
+  transition: all  0.4s ease !important;
+  /* Transition for link color */
+} 
+
+ul li a:hover {
+  transition: all 0.4s ease-in !important;
+  color: var(--primary-color) !important;
+  /* Change color on hover */
+}
+
+
+/*  Menu css end here  */
